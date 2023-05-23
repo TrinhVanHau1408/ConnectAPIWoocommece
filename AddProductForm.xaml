@@ -1,0 +1,62 @@
+<!-- <Window x:Class="WpfApp.AddProductForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Product" Height="250" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Name:" Grid.Row="0" Margin="20,10,0,0"/>
+        <TextBox x:Name="nameTextBox" Grid.Row="0" Margin="100,10,20,0"/>
+        
+        <TextBlock Text="Price:" Grid.Row="1" Margin="20,10,0,0"/>
+        <TextBox x:Name="priceTextBox" Grid.Row="1" Margin="100,10,20,0"/>
+        
+        <TextBlock Text="Quantity:" Grid.Row="2" Margin="20,10,0,0"/>
+        <TextBox x:Name="quantityTextBox" Grid.Row="2" Margin="100,10,20,0"/>
+        
+         
+        <TextBlock Text="Description:" Grid.Row="3" Margin="20,10,0,0"/>
+        <TextBox x:Name="descriptionTextBox" Grid.Row="1" Margin="100,10,20,0"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="3" Margin="20,10,0,0">
+            <TextBox x:Name="descriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="100" MaxHeight="200" Width="200" MaxWidth="1000" />
+        </ScrollViewer>
+        <Button x:Name="saveButton" Content="Save" Grid.Row="4" Margin="0,240,0,40" Click="SaveButton_Click"/>
+    </Grid>
+</Window> -->
+
+<Window x:Class="WpfApp.AddProductForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thêm mới sản phẩm" Height="400" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Name:" Grid.Row="0"  Margin="5" />
+        <TextBox x:Name="nameTextBox" Grid.Row="0" Text="{Binding Id}" Margin="80,5,5,5" />
+
+        <TextBlock Text="Price:" Grid.Row="1"  Margin="5" />
+        <TextBox x:Name="priceTextBox" Grid.Row="1" Text="{Binding Price}" Margin="80,5,5,5" />
+
+        <TextBlock Text="Quantity:" Grid.Row="2" Margin="5" />
+        <TextBox x:Name="quantityTextBox" Grid.Row="2" Text="{Binding Quantity}" Margin="80,5,5,5" />
+
+        <TextBlock Text="Description:" Grid.Row="3" Margin="5" />
+        <TextBox x:Name="descriptionTextBox" Grid.Row="3" Text="{Binding Description}" Margin="80,5,5,5" TextWrapping="Wrap"
+                 AcceptsReturn="True" Height="100" />
+
+        <Button x:Name="saveButton" Click="SaveButton_Click" Content="Save" Grid.Row="4" Width="100" Margin="5" />
+    </Grid>
+</Window>
+

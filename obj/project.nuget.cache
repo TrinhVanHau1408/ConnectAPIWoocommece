@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JBc34YDZuxQislWvHgGQZvjopfUMrurqW4lEbjJegJWAzDfA01qS+npYz18M2lQobETS73iQFgV1IIAIi1pnzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vanhu\\Desktop\\api\\api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vanhu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
